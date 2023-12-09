@@ -2,8 +2,7 @@ import { model, Schema } from 'mongoose';
 import bcryptjs from 'bcryptjs';
 import validator from 'validator';
 import jwt from "jsonwebtoken";
-import dotenv from 'dotenv';
-dotenv.config({ path: 'config/dev.env' });
+
 const userSchema = new Schema({
     name: {
         type: String,
