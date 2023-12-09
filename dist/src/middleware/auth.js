@@ -1,7 +1,5 @@
 import jwt from "jsonwebtoken";
 import User from "../models/user.js";
-import dotenv from 'dotenv';
-dotenv.config({ path: 'config/dev.env' });
 const auth = async (req, res, next) => {
     try {
         const token = req.header('Authorization').replace('Bearer ', '');
